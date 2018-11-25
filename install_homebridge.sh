@@ -823,12 +823,14 @@ cat > send.cpp << EOF
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    int PIN           = 0;
-    int protocol      = atoi(argv[1]);
-    int systemCode    = atoi(argv[2]);
-    int unitCode      = atoi(argv[3]);
-    int command       = atoi(argv[4]);
-
+    int PIN                         = 0;
+    unsigned long int protocol      = atoi(argv[1]);
+    int systemCode                  = atoi(argv[2]);
+    int unitCode                    = atoi(argv[3]);
+    int command                     = atoi(argv[4]);
+    if(argc != 5) {
+      return 1;
+    }
     if (wiringPiSetup () == -1) {
       return 1;
     }
