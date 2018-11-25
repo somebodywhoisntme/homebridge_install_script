@@ -825,7 +825,7 @@ cat > send.cpp << EOF
 int main(int argc, char *argv[]) {
     int PIN           = 0;
     int protocol      = atoi(argv[1]);
-    int systemCode    = argv[2];
+    int systemCode    = atoi(argv[2]);
     int unitCode      = atoi(argv[3]);
     int command       = atoi(argv[4]);
 
