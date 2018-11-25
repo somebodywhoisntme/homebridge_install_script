@@ -1,8 +1,8 @@
 # homebridge_install_script
 
-Just a small script which installs homebridge and cmdSwitch2.
+Just a small script which installs and configure homebridge and cmdSwitch2 with rc-switch library for controlling Rhine ceiling fan and no-name outlets with a cheap 433mhz tranciever.
 
-Usage:
+Enter these commands on a freshly installed raspbian:
 
 ```shell
 wget https://raw.githubusercontent.com/somebodywhoisntme/homebridge_install_script/master/install_homebridge.sh
