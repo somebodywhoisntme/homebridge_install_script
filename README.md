@@ -3,6 +3,7 @@
 Just a small script which installs and configures [homebridge](https://www.github.com/nfarina/homebridge), [cmdSwitch2](https://www.npmjs.com/package/homebridge-cmdswitch2) and [rc-switch](https://github.com/sui77/rc-switch) library with 433mhz support Rhine ceiling fan(s) and various no-name outlets.
 
 
+## Installation
 
 Enter these commands on a freshly installed raspbian:
 
@@ -19,6 +20,11 @@ Follow screen instructions.
 
 When photo was taken from QR-Code press 'q'.
 
+
+
+
+
+## Configuration
 
 The homebridge config.json is located at /var/homebridge/
 
