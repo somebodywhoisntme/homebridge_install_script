@@ -72,7 +72,7 @@ if [ -z $HOMEBRIDGE_USER ]; then
   echo ""
   echo "Copy the next line and paste it at the end of the following file and save with ctrl+x, 'y' or 'j' and then 'enter':"
   echo ""
-  echo -e "\033[31;7mhomebridge  ALL=(ALL) NOPASSWD: /var/homebridge/send\033[0m"
+  echo -e "\033[31;7mhomebridge     ALL = NOPASSWD: /var/homebridge/send\033[0m"
   echo ""
   read -p "Press enter to continue."
   sudo visudo
@@ -825,7 +825,7 @@ cat > send.cpp << EOF
 int main(int argc, char *argv[]) {
     int PIN           = 0;
     int protocol      = atoi(argv[1]);
-    char* systemCode  = argv[2];
+    int systemCode    = argv[2];
     int unitCode      = atoi(argv[3]);
     int command       = atoi(argv[4]);
 
