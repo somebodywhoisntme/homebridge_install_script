@@ -8,6 +8,7 @@ WIRINGPI=`command -v gpio`
 HOMEBRIDGE=`command -v homebridge`
 HOMEBRIDGE_USER=`getent passwd $user  > /dev/null`
 
+HOMEBRIDGE_PIN=""
 clear
 echo " _____                   _         _    _           "
 echo "|  |  | ___  _____  ___ | |_  ___ |_| _| | ___  ___ "
@@ -869,13 +870,17 @@ echo "create homebridge config"
 if [ ! -e ~/.homebridge ]; then
   timeout 20 homebridge > /dev/null 2>&1
 fi
+if [ -z $HOMEBRIDGE_PIN ];then
+  echo "Enter a new Homebridge pin [ Format: 123-45-678 ] and press enter."
+  read HOMEBRIDGE_PIN
+fi
 cat > config.json << EOF
 {
     "bridge": {
         "name": "Homebridge",
         "username": "CC:22:3D:E3:CE:31",
         "port": 51826,
-        "pin": "016-05-447"
+        "pin": $HOMEBRIDGE_PIN
     },
 
     "description": "Configuration file",
