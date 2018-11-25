@@ -1,6 +1,6 @@
 # homebridge_install_script
 
-Just a small script which installs and configure [homebridge](https://www.github.com/nfarina/homebridge), [cmdSwitch2](https://www.npmjs.com/package/homebridge-cmdswitch2) and [rc-switch](https://github.com/sui77/rc-switch) library with 433mhz support Rhine ceiling fan(s) and various no-name outlets.
+Just a small script which installs and configures [homebridge](https://www.github.com/nfarina/homebridge), [cmdSwitch2](https://www.npmjs.com/package/homebridge-cmdswitch2) and [rc-switch](https://github.com/sui77/rc-switch) library with 433mhz support Rhine ceiling fan(s) and various no-name outlets.
 
 
 
