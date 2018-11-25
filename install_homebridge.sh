@@ -888,11 +888,11 @@ cat > config.json << EOF
             "platform" : "cmdSwitch2",
             "name": "CMD Switch",
             "switches": [{
-                "name" : "Ventilator",
+                "name" : "Fan",
                 "on_cmd": "sudo /var/homebridge/send 8 119 0 0",
                 "off_cmd": "sudo /var/homebridge/send 8 125 0 0"
               }, {
-                "name" : "Strom",
+                "name" : "Outlet",
                 "on_cmd": "sudo /var/homebridge/send 2 1 1 1",
                 "off_cmd": "sudo /var/homebridge/send 2 1 1 0"
              }]
