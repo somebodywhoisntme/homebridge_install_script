@@ -919,6 +919,7 @@ echo "Displaying Homebridge QR Code. After taking a foto press 'q'"
 read -p "Press enter to continue"
 sudo journalctl -au homebridge | grep -A 32 "Scan this code"
 read -p "Press enter to continue"
+clear
 echo " _____                   _         _    _           "
 echo "|  |  | ___  _____  ___ | |_  ___ |_| _| | ___  ___ "
 echo "|     || . ||     || -_|| . ||  _|| || . || . || -_|"
