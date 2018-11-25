@@ -72,9 +72,9 @@ if [ -z $HOMEBRIDGE_USER ]; then
   echo ""
   echo "Copy the next line and paste it at the end of the following file and save with ctrl+x, 'y' or 'j' and then 'enter':"
   echo ""
-  echo "homebridge  ALL=(ALL) NOPASSWD: /var/homebridge/send"
+  echo -e "\033[31;7mhomebridge  ALL=(ALL) NOPASSWD: /var/homebridge/send\033[0m"
   echo ""
-  read -p "Press enter to continue"
+  read -p "Press enter to continue."
   sudo visudo
   sudo wget -O /etc/default/homebridge https://gist.githubusercontent.com/johannrichard/0ad0de1feb6adb9eb61a/raw/7defd3836f4fbe2b98ea5a9749c4413d024e9623/homebridge > /dev/null 2>&1
   sudo cat <<\EOF >> homebridge.service
