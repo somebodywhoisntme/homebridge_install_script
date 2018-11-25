@@ -880,7 +880,7 @@ cat > config.json << EOF
         "name": "Homebridge",
         "username": "CC:22:3D:E3:CE:31",
         "port": 51826,
-        "pin": $HOMEBRIDGE_PIN
+        "pin": "$HOMEBRIDGE_PIN"
     },
 
     "description": "Configuration file",
@@ -916,7 +916,7 @@ runtime=$(((end-start)/60))
 echo ""
 echo "Displaying Homebridge QR Code. After taking a foto press 'q'"
 read -p "Press enter to continue"
-sudo journalctl -au homebridge | grep '\[47m'
+sudo journalctl -au homebridge | grep -A 32 "Scan this code"
 read -p "Press enter to continue"
 echo " _____                   _         _    _           "
 echo "|  |  | ___  _____  ___ | |_  ___ |_| _| | ___  ___ "
