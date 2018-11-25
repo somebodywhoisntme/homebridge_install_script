@@ -18,9 +18,6 @@ chmod +x install_homebridge.sh
 
 Follow screen instructions.
 
-When photo was taken from QR-Code press 'q'.
-
-
 
 
 
