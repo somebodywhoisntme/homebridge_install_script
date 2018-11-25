@@ -35,13 +35,13 @@ sudo nano /var/homebridge/config.json
 
 Syntax ceiling fan:
 ```
-  send [protocol number] [command] [0] [0]
+send [protocol number] [command] [0] [0]
 ```
 The last two 0's are needed because I don't know a better way to prevent a seg-fault atm but they don't have a purpose.
 
 Syntax outlet:
 ```
-  send [protocol number] [system code] [device ID] [command]
+send [protocol number] [system code] [device ID] [command]
 ```
 
 Homebridge config.json example with ceiling fan stage 1/off button and one outlet.  
