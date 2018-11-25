@@ -913,6 +913,7 @@ sudo systemctl enable homebridge > /dev/null 2>&1
 sudo systemctl start homebridge > /dev/null 2>&1
 end=`date +%s`
 runtime=$(((end-start)/60))
+sleep 10
 echo ""
 echo "Displaying Homebridge QR Code. After taking a foto press 'q'"
 read -p "Press enter to continue"
