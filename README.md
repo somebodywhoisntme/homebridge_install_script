@@ -9,6 +9,6 @@ wget https://raw.githubusercontent.com/somebodywhoisntme/homebridge_install_scri
 
 chmod +x install_homebridge.sh
 
-./install_homebridge
+./install_homebridge.sh
 
 ```
