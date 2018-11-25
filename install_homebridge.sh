@@ -911,7 +911,8 @@ runtime=$(((end-start)/60))
 echo ""
 echo "Displaying Homebridge QR Code. After taking a foto press 'q'"
 read -p "Press enter to continue"
-sudo journalctl -au homebridge
+sudo journalctl -au homebridge | grep '\[47m'
+read -p "Press enter to continue"
 echo " _____                   _         _    _           "
 echo "|  |  | ___  _____  ___ | |_  ___ |_| _| | ___  ___ "
 echo "|     || . ||     || -_|| . ||  _|| || . || . || -_|"
